@@ -1,0 +1,37 @@
+/* ------------------- Controls / Buttons ------------------- */
+
+.controls {
+
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1rem;
+margin-bottom: 2rem;
+}
+
+.controls .filters,
+.controls .sorts {
+display: flex;
+gap: 0.5rem;
+flex-wrap: wrap;
+}
+
+.controls button {
+padding: 0.5rem 1rem;
+border: none;
+border-radius: 8px;
+background-color: #667eea;
+color: white;
+cursor: pointer;
+font-size: 0.9rem;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.controls button:hover {
+background-color: #556cd6;
+transform: translateY(-2px);
+}
+
+.controls button.active {
+background-color: #764ba2;
+}
