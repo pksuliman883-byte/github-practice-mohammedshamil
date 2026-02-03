@@ -1,25 +1,46 @@
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
+
 &lt;head&gt;
 &lt;meta charset=&quot;UTF-8&quot;&gt;
 &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
 &lt;title&gt;RecipeJS - Your Functional Cooking Companion&lt;/title&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
-
 &lt;/head&gt;
 &lt;body&gt;
-&lt;!-- Header Section --&gt;
+
 &lt;header&gt;
 &lt;h1&gt;RecipeJS&lt;/h1&gt;
 &lt;p&gt;Your Functional Cooking Companion&lt;/p&gt;
 &lt;/header&gt;
-&lt;!-- Main Content --&gt;
+
 &lt;main&gt;
-&lt;div id=&quot;recipe-container&quot;&gt;
-&lt;!-- Recipe cards will be rendered here by JavaScript --&gt;
+&lt;!-- Filter &amp; Sort Controls --&gt;
+&lt;div class=&quot;controls&quot;&gt;
+
+&lt;!-- Filter Buttons --&gt;
+&lt;div class=&quot;filters&quot;&gt;
+&lt;button data-filter=&quot;all&quot; class=&quot;active&quot;&gt;All&lt;/button&gt;
+&lt;button data-filter=&quot;easy&quot;&gt;Easy&lt;/button&gt;
+&lt;button data-filter=&quot;medium&quot;&gt;Medium&lt;/button&gt;
+&lt;button data-filter=&quot;hard&quot;&gt;Hard&lt;/button&gt;
+&lt;button data-filter=&quot;quick&quot;&gt;Quick (&amp;lt;30min)&lt;/button&gt;
+
 &lt;/div&gt;
+
+&lt;!-- Sort Buttons --&gt;
+&lt;div class=&quot;sorts&quot;&gt;
+&lt;button data-sort=&quot;none&quot; class=&quot;active&quot;&gt;Default&lt;/button&gt;
+&lt;button data-sort=&quot;name&quot;&gt;Sort by Name&lt;/button&gt;
+&lt;button data-sort=&quot;time&quot;&gt;Sort by Time&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- Recipes will be rendered here --&gt;
+&lt;div id=&quot;recipe-container&quot;&gt;&lt;/div&gt;
 &lt;/main&gt;
+
 &lt;script src=&quot;app.js&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-
