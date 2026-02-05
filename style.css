@@ -1,0 +1,137 @@
+/* Global */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 1rem;
+}
+
+/* Header */
+header {
+    text-align: center;
+}
+
+/* Search */
+.search-container {
+    max-width: 400px;
+    margin: 1rem auto;
+    position: relative;
+}
+
+#search-input {
+    width: 100%;
+    padding: 0.7rem 2.5rem 0.7rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#search-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.3);
+}
+
+.clear-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.controls .filters,
+.controls .sorts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.controls button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #667eea;
+    color: #fff;
+    cursor: pointer;
+}
+
+.controls button.active {
+    background-color: #764ba2;
+}
+
+/* Counter */
+.recipe-info {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Recipe Card */
+.recipe-card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Favorite */
+.favorite-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.favorite-btn:hover {
+    transform: scale(1.2);
+}
+
+/* Toggle Buttons */
+.toggle-btn {
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    background-color: #f97316;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Expandable Sections */
+.steps-container,
+.ingredients-container {
+    display: none;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    background-color: #f9f9f9;
+    border-left: 3px solid #667eea;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .controls {
+        flex-direction: column;
+    }
+
+    .controls button {
+        width: 100%;
+    }
+}
